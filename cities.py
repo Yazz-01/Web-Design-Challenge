@@ -19,4 +19,4 @@ cities_df= pd.DataFrame(cities_data)
 cities_df.head(5)
 print(cities_df)
 
-dfi.export("output_figures/cities_df.png")
+dfi.export(cities_df,"output_figures/cities_df.png")
