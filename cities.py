@@ -16,6 +16,4 @@ cities_data = pd.read_csv(cities_path)
 # Combine the data into a single dataset
 cities_df= pd.DataFrame(cities_data)
 # Display the data table for preview
-print(cities_df.to_html())
-#print(cities_df)
-
+print(cities_df.to_html('tableData.html', index=False))

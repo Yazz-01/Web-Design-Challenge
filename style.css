@@ -76,7 +76,7 @@ a.btn:hover {
 
 th,
 td {
-    text-align: left;
+    text-align: center;
     padding: 8px;
 }
 
@@ -85,7 +85,7 @@ tr:nth-child(even) {
 }
 
 th {
-    background-color: #04AA6D;
+    background-color: #0476aa;
     color: white;
 }
 
