@@ -5,6 +5,7 @@ import scipy.stats as st
 from scipy.stats import sem
 import numpy as np
 import csv
+import dataframe_image as dfi
 
 # Study data files
 cities_path = "Resources/cities.csv"
@@ -17,3 +18,5 @@ cities_df= pd.DataFrame(cities_data)
 # Display the data table for preview
 cities_df.head(5)
 print(cities_df)
+
+dfi.export("output_figures/cities_df.png")
