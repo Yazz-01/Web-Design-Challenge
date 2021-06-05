@@ -1,17 +1,19 @@
-role="group" {
-    aria-labelledby
+/* start navigation*/
+
+.header_area.main-menu.navbar.navbar-brand {
+    padding: 0 2rem 0 5rem;
 }
 
-.img-fluid. {
-    max-width: 100%;
-    eight: auto;
+header_area.main-menu.navbar {
+    padding: 1rem 20rem;
 }
 
-body {
-    background: #ddb1d6;
+.mr-1 {
+    margin-right: ($spacer *.25) !important;
 }
 
-{}
+
+/* end navigation*/
 
 
 }
