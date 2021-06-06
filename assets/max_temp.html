@@ -15,34 +15,101 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body class="bg-info d-flex flex-column min-vh-100 ">
+
+    <!-- Main Section-->
+
+    <div class="container">
+        <section id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-info">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/weather_logo.png" alt="logo" width="50">
+                    </a>
+
+                    <a class="navbar-brand" href="#">Correlations between Latitude & Weather</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="assets/correlations.html">Correlational plots</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="assets/data.html">Cities Data</a>
+                            </li>
+
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Data Visualizations</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="assets/max_temp.html">Temperature</a>
+                                        <a class="dropdown-item" href="assets/humidity.html">Humidity</a>
+                                        <a class="dropdown-item" href="assets/cloudiness.html">Cloudiness</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="assets/cloudiness.html">Wind Speed</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-md-11 bg-white mx-2">
+                    <p class="text-start">This is a project made in Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. This was accomplish by utilizing Python libraries, the OpenWeatherMap API, and a little common sense
+                        to create a representative model of weather across world cities. Results demonstrates that the atmospheric circulations responds differently to the changes in the ice and snow extents, with a stronger response to sea-ice loss,
+                        even though its reduction is half as large as that.</p>
+
+                    <a href="https://github.com/Yazz-01/Python_API_challenge/blob/main/Weatherpy/weather_main.ipynb" class="readMore">Read More</a>
 
 
-<body>
+                    <!-- Paragraph-->
 
-    <div id="central" class="container-fluid">
-        <div id="max-temp" class="container w-50 pl-5">
-            <div class="col-sm-8 col-sm-8"><img src="Visualizations/max_temp.png" class="img-responsive img-thumbnail" alt="cloudiness"></div>
-            <div class="col-sm-4 col-sm-4"></div>
+
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                            <div class="col-md-11 bg-white m-2">
+                                <h4 class="text-center py-2">Latitude vs Max Temperature</h4>
+                                <p>From the figures shown in this page we clearly can observe the relationship that exists between these two different natural conditions.</p>
+                                <p>It is relevant to mention that the humidity changes rapidly from a higher place on Earth given as reference the North Hemisphere.</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-evenly">
+                            <div class="col-md-5 bg-white m-2">
+                                <img src="Visualizations/max_temp.png" class="w-100 p-3 rounded mx-auto d-block" alt="max_temp">
+                            </div>
+
+                            <div class="col-md-5 bg-white m-2">
+                                <img src="Visualizations/cloud.png" class="w-100 p-3 rounded mx-auto d-block" alt="cloudiness">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-sm">col-sm</div>
-            <div class="col-sm">col-sm</div>
-            <div class="col-sm">col-sm</div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <!-- Footer-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- Footer-->
 
-    <!--  Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <!--  Separate -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <!--  Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!--  Separate -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
 </body>
 
