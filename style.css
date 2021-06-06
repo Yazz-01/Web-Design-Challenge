@@ -1,146 +1,147 @@
-    /* start navigation*/
-        
-        * {
-            padding: 0;
-            margin: 0px font-family: 'Ubuntu', sans-serif
-        }
-        /* Header*/
-        
-        #header {
-            background-image: url('Resources/precip.png');
-            height: 70vh;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .navbar-nav li a {
-            float: right!important;
-            color: #fff!important;
-            margin-right: 20px;
-            text-shadow: 1px 1px 5px #000
-        }
-        
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1em;
-            text-transform: uppercase;
-            color: #262626 !important;
-        }
-        
-        .navbar-brand img {
-            width: 120px margin-top: 30px;
-            margin-top: 10px;
-        }
-        
-        .nav-item {
-            font-weight: 600;
-            text-transform: uppercase;
-            padding-left: 50px;
-        }
-        
-        .nav-link {
-            color: #ccc !important;
-            letter-spacing: 2px;
-            font-size: 1em;
-            font-weight: 700;
-        }
-        
-        .navbar-toggler {
-            margin-right: 20px;
-            color: #fff;
-            border: none !important;
-            outline: none!important;
-        }
-        
-        .nav-link:hover {
-            background: #dcdde1 !important;
-            color: #262626 !important;
-            border-radius: 5px;
-            transition: all 0.6s ease 0s;
-        }
-        
-        .main {
-            position: relative;
-            background: url(Resources/back.jpeg);
-            min-height: 10vh;
-            background-size: cover;
-            background-position: center;
-            padding: 280px 0 220px;
-        }
-        
-        .main h2 {
-            font-size: 2.6em;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        
-        .main p {
-            margin-top: 1em;
-            padding: 0;
-            font-size: 16;
-            padding-bottom: 25px;
-            color: rgb(19, 19, 58);
-        }
-        
-        .main .readMore {
-            background: #718093;
-            color: rgb(8, 35, 190);
-            border-radius: 5px;
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-        
-        .header_area.main-menu.navbar.navbar-brand {
-            padding: 0 2rem 0 5rem;
-        }
-        
-        header_area.main-menu.navbar {
-            padding: 1rem 20rem;
-        }
-        
-        .mr-1 {
-            margin-right: ($spacer *.25) !important;
-        }
-        /* Visualizations*/
-        
-        #visualizations {
-            background-color: #dbe5e6;
-            padding: 30px 0px;
-        }
-        
-        #visualizations h1 {
-            font-weight: 900;
-            font-size: 34px;
-            padding-bottom: 5p;
-        }
-        
-        .title {
-            text-align: center;
-            padding: 25px 0px;
-        }
-        
-        .title p {
-            font-size: 18px;
-        }
-        
-        .card {
-            margin: 20px 10px;
-        }
-        
-        .card-body a {
-            color: #0c7f90;
-            text-decoration: none;
-            font-size: 15px;
-            margin-top: auto;
-            font-weight: 600;
-        }
-        
-        .card-body a:hover {
-            color: #63a6b0;
-            text-decoration: none;
-        }
-        /* correlataions*/
-        
-        #correlations {}
+/* start navigation*/
+    
+    * {
+        padding: 0;
+        margin: 0px font-family: 'Ubuntu', sans-serif
     }
-    /* end navigation*/
+    /* Header*/
+    
+    #header {
+        /*background-image: url('Resources/precip.png');*/
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .navbar-nav li a {
+        float: right!important;
+        color: #fff!important;
+        margin-right: 20px;
+        text-shadow: 1px 1px 5px #000
+    }
+    
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 1em;
+        text-transform: lowercase;
+        color: #262626 !important;
+    }
+    
+    .navbar-brand img {
+        width: 120px margin-top: 30px;
+        margin-top: 10px;
+    }
+    
+    .nav-item {
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-left: 50px;
+    }
+    
+    .nav-link {
+        color: #ccc !important;
+        letter-spacing: 2px;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    
+    .navbar-toggler {
+        margin-right: 20px;
+        color: #fff;
+        border: none !important;
+        outline: none!important;
+    }
+    
+    .nav-link:hover {
+        background: #dcdde1 !important;
+        color: #262626 !important;
+        border-radius: 5px;
+        transition: all 0.6s ease 0s;
+    }
+    
+    .main {
+        position: relative;
+        background: url(Resources/back.jpeg);
+        min-height: 10vh;
+        background-size: cover;
+        background-position: center;
+        padding: 280px 0 220px;
+    }
+    
+    .main h2 {
+        font-size: 2.6em;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .main p {
+        margin-top: 1em;
+        padding: 0;
+        font-size: 16;
+        padding-bottom: 25px;
+        color: rgb(19, 19, 58);
+    }
+    
+    .main .readMore {
+        background: #718093;
+        color: rgb(8, 35, 190);
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    
+    .header_area.main-menu.navbar.navbar-brand {
+        padding: 0 2rem 0 5rem;
+    }
+    
+    header_area.main-menu.navbar {
+        padding: 1rem 20rem;
+    }
+    
+    .mr-1 {
+        margin-right: ($spacer *.25) !important;
+    }
+    /* Visualizations*/
+    
+    #visualizations {
+        background-color: #dbe5e6;
+        padding: 30px 0px;
+    }
+    
+    #visualizations h1 {
+        font-weight: 900;
+        font-size: 34px;
+        padding-bottom: 5p;
+    }
+    
+    .title {
+        text-align: center;
+        padding: 25px 0px;
+    }
+    
+    .title p {
+        font-size: 18px;
+    }
+    
+    .card {
+        margin: 20px 10px;
+    }
+    
+    .card-body a {
+        color: #0c7f90;
+        text-decoration: none;
+        font-size: 15px;
+        margin-top: auto;
+        font-weight: 600;
+    }
+    
+    .card-body a:hover {
+        color: #63a6b0;
+        text-decoration: none;
+    }
+    /* correlataions*/
+    
+    #correlations {}
+}
+
+/* end navigation*/
