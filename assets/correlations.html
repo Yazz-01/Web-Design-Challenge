@@ -16,23 +16,27 @@
 </head>
 
 
-<body>
+<body class="bg-info d-flex flex-column min-vh-100 ">
     <!-- Main Section-->
 
-    <section id="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+    <div class="container">
+        <section id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
 
-                <a class="navbar-brand" href="#">
-                    <img src="images/weather_logo.png" alt="logo" width="100">
-                </a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/weather_logo.png" alt="logo" width="100">
+                    </a>
 
-                <a class="navbar-brand" href="#">Latitud with Attitude</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    </section>
-
+                    <div class="container">
+                        <a class="navbar-brand" href="#">Correlation of Cloudiness vs Max Temperature</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"></button>
+                        <span class="navbar-toggler-icon"></span>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </div>
 
 
 
@@ -41,32 +45,35 @@
     <section id="correlations">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-4">
                     <div class="card-deck">
                         <div class="card text-center">
                             <img src="Visualizations/cloud.png" class="card-img-top" alt="cloud">
                             <div class="card-body">
                                 <h5 class="card-title">Coudiness</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <a href="#">LEARN MORE</a>
+                                <p class="card-text">Interestingly the level of cloudiness increases according to the rise in latitud. </p>
+                                <a href="cloudiness.html">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card-deck">
-                        <div class="card text-center">
-                            <img src="Visualizations/max_temp.png" class="card-img-top" alt="max_temp">
-                            <div class="card-body">
-                                <h5 class="card-title">Max Temperature</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#">UNDERSTANDING WEATHER</a>
+                <div class="container">
+                    <div class="col-ml-2">
+                        <div class="card-deck">
+                            <div class="card text-center">
+                                <img src="Visualizations/max_temp.png" class="card-img-top" alt="max_temp">
+                                <div class="card-body">
+                                    <h5 class="card-title">Max Temperature</h5>
+                                    <p class="card-text">Get a look to understand better how does the weather behaves accordingly to latitud.</p>
+                                    <a href="max_temp.html">UNDERSTANDING WEATHER</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
 
